@@ -4,6 +4,8 @@
 #include <stdlib.h>
 #include <math.h>
 
+
+
 int main(int argc, char** argv) 
 {
     
@@ -44,6 +46,7 @@ int main(int argc, char** argv)
 			ssum = ssum + std_avgs[i];
 		}
 		savg = (ssum / world_size);
+		savg = sqrt(savg);
 		printf("Standard Deviation = %f\n",savg);
 		
 	}
